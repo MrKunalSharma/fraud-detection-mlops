@@ -51,10 +51,10 @@ with st.sidebar:
     
     # API endpoint configuration
     api_endpoint = st.text_input(
-        "API Endpoint",
-        value="http://localhost:8000",
-        help="Enter your deployed API URL"
-    )
+    "API Endpoint",
+    value="https://fraud-detection-api-v5cc.onrender.com",
+    help="API endpoint (may take 30s to wake up on first request)"
+)
     
     st.markdown("---")
     
