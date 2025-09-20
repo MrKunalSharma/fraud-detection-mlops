@@ -248,11 +248,15 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 Dataset: Kaggle Credit Card Fraud Detection
 Inspired by real-world fraud detection systems
 Built with modern MLOps practices
-📧 Contact
-Kunal Sharma
+## 📧 Contact
 
-LinkedIn: https://www.linkedin.com/in/kunal-sharma-1a8457257/
-Email: kunalsharma13579kunals@gmail.com
-Project Link: https://github.com/MrKunalSharma/fraud-detection-mlops.git
+**Kunal Sharma**
+- LinkedIn: [https://www.linkedin.com/in/kunal-sharma-1a8457257/](https://www.linkedin.com/in/kunal-sharma-1a8457257/)
+- Email: kunalsharma13579kunals@gmail.com
+- GitHub: [https://github.com/MrKunalSharma](https://github.com/MrKunalSharma)
+
+Project Link: [https://github.com/MrKunalSharma/fraud-detection-mlops](https://github.com/MrKunalSharma/fraud-detection-mlops)
+
+
 
 ⭐ If you found this project helpful, please consider giving it a star!
