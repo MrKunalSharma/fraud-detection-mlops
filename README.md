@@ -1,120 +1,3 @@
-## 📧 Contact
-
-**Kunal Sharma**
-- LinkedIn: [https://www.linkedin.com/in/kunal-sharma-1a8457257/](https://www.linkedin.com/in/kunal-sharma-1a8457257/)
-- Email: kunalsharma13579kunals@gmail.com
-- GitHub: [https://github.com/MrKunalSharma](https://github.com/MrKunalSharma)
-
-Project Link: [https://github.com/MrKunalSharma/fraud-detection-mlops](https://github.com/MrKunalSharma/fraud-detection-mlops)
-
-
-                
-And update the clone command:
-
-
-          
-
-markdown
-
-
-### Installation
-
-1. **Clone the repository**
-```bash
-git clone https://github.com/MrKunalSharma/fraud-detection-mlops.git
-cd fraud-detection-mlops
-
-
-                
-Push Your Updates
-
-          
-
-powershell
-
-
-# Update README with your username
-git add README.md
-git commit -m "Update GitHub links and contact information"
-git push
-
-
-                
-Your GitHub Repository Link
-🔗 Your project is now at: https://github.com/MrKunalSharma/fraud-detection-mlops
-
-LinkedIn Post (Ready to Copy)
-
-
-
-🚀 Excited to share my latest MLOps project!
-
-Built a production-ready fraud detection system that processes credit card transactions in real-time with 99.95% accuracy.
-
-Key highlights:
-• Automated ML pipeline comparing 3 models (Random Forest, Logistic Regression, Decision Tree)
-• REST API serving predictions in <50ms with FastAPI
-• Real-time monitoring with Prometheus & Grafana dashboards
-• Fully containerized with Docker for easy deployment
-• 87.5% test coverage with GitHub Actions CI/CD
-
-The system handles 100+ requests/second and includes comprehensive monitoring for production use.
-
-Tech stack: Python, Scikit-learn, FastAPI, Docker, Prometheus, Grafana, GitHub Actions
-
-🔗 Check it out: https://github.com/MrKunalSharma/fraud-detection-mlops
-
-#MachineLearning #MLOps #DataScience #Python #Docker #API #FraudDetection
-
-
-          
-Final Steps
-Add Screenshots (Important!):
-
-          
-
-powershell
-
-
-# Create screenshots folder if not exists
-mkdir screenshots
-
-# After adding screenshots
-git add screenshots/
-git commit -m "Add project screenshots and demo"
-git push
-
-
-                
-Star Your Own Repository - Go to https://github.com/MrKunalSharma/fraud-detection-mlops and star it
-
-Pin Repository - Go to your profile https://github.com/MrKunalSharma and pin this repository
-
-Add Repository Topics - On your repo page, click the gear ⚙️ next to "About" and add:
-
-machine-learning
-fraud-detection
-mlops
-fastapi
-docker
-prometheus
-monitoring
-Your project is now live at https://github.com/MrKunalSharma/fraud-detection-mlops! 🎉
-
-Great job building this industry-level project! This will definitely impress recruiters and interviewers.
-
-the installation part is still in single block plus also remove the screenshot part i dont want that
-
-claude-opus-4-20250514
-
-Here's the updated README without screenshots and with properly formatted installation steps:
-
-
-          
-
-markdown
-
-
 # 🛡️ Real-time Fraud Detection System with MLOps Pipeline
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/downloads/)
@@ -132,9 +15,6 @@ A production-ready machine learning system for real-time credit card fraud detec
 - **Production Monitoring**: Prometheus metrics and Grafana dashboards
 - **Containerized Deployment**: Docker Compose for easy deployment
 - **High Performance**: Sub-100ms prediction latency
-
-
-
 
 ## 🚀 Quick Start
 
@@ -324,6 +204,7 @@ Transaction risk distribution
 API response times
 System health metrics
 
+
           
 🔧 Configuration
 Key configurations in src/config.py:
@@ -362,3 +243,6 @@ GitHub: https://github.com/MrKunalSharma
 Project Link: https://github.com/MrKunalSharma/fraud-detection-mlops
 
 ⭐ If you found this project helpful, please consider giving it a star!
+
+
+
