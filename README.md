@@ -4,6 +4,8 @@
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.104.1-green.svg)](https://fastapi.tiangolo.com/)
 [![Docker](https://img.shields.io/badge/Docker-Containerized-blue.svg)](https://www.docker.com/)
 [![Prometheus](https://img.shields.io/badge/Monitoring-Prometheus-orange.svg)](https://prometheus.io/)
+[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen.svg)](https://fraud-detection-mlops-msnfh7adt5ykkr6yzbmhyv.streamlit.app/)
+[![API Status](https://img.shields.io/badge/API-online-brightgreen.svg)](https://fraud-detection-api-v5cc.onrender.com/docs)
 
 A production-ready machine learning system for real-time credit card fraud detection, featuring automated model training, API deployment, and comprehensive monitoring.
 
@@ -18,6 +20,17 @@ A production-ready machine learning system for real-time credit card fraud detec
 - **Containerized Deployment**: Docker Compose for easy deployment
 - **High Performance**: Sub-100ms prediction latency
 
+
+## 🚀 Live Demo
+
+### Try it Now!
+🎯 **[Fraud Detection System Demo](https://fraud-detection-mlops-msnfh7adt5ykkr6yzbmhyv.streamlit.app/)**
+
+### API Endpoints
+📚 **[Interactive API Docs](https://fraud-detection-api-v5cc.onrender.com/docs)**  
+🔍 **[Health Check](https://fraud-detection-api-v5cc.onrender.com/health)**
+
+
 ## 🚀 Quick Start
 
 ### Prerequisites
@@ -26,7 +39,10 @@ A production-ready machine learning system for real-time credit card fraud detec
 - 8GB RAM minimum
 
 ### Installation
+**Option 1: Try the Live Demo** 
+🚀 Visit [https://fraud-detection-mlops-msnfh7adt5ykkr6yzbmhyv.streamlit.app/](https://fraud-detection-mlops-msnfh7adt5ykkr6yzbmhyv.streamlit.app/)
 
+**Option 2: Run Locally**
 1. **Clone the repository**
 
 ```bash
