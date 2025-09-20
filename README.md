@@ -31,7 +31,7 @@ git clone https://github.com/MrKunalSharma/fraud-detection-mlops.git
 cd fraud-detection-mlops
 
 
-          
+                
 2. Run with Docker Compose
 
 
@@ -203,6 +203,25 @@ Real-time fraud detection rate
 Transaction risk distribution
 API response times
 System health metrics
+🗂️ Project Structure
+
+
+
+fraud-detection-mlops/
+├── src/
+│   ├── config.py              # Configuration settings
+│   ├── data_preprocessing.py  # Data pipeline
+│   ├── model_training.py      # Model training logic
+│   ├── model_serving.py       # FastAPI application
+│   └── monitoring.py          # Metrics tracking
+├── models/                    # Trained models
+├── data/                      # Dataset storage
+├── docker/                    # Docker configurations
+├── monitoring/                # Prometheus & Grafana configs
+├── tests/                     # Unit tests
+├── requirements.txt           # Python dependencies
+├── Dockerfile                 # Container definition
+└── docker-compose.yml         # Multi-container setup
 
 
           
@@ -243,6 +262,3 @@ GitHub: https://github.com/MrKunalSharma
 Project Link: https://github.com/MrKunalSharma/fraud-detection-mlops
 
 ⭐ If you found this project helpful, please consider giving it a star!
-
-
-
