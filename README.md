@@ -1,3 +1,11 @@
+I see the issue! The problem is that the first code block under "Clone the repository" is not properly closed. Here's the fixed version:
+
+
+          
+
+markdown
+
+
 # 🛡️ Real-time Fraud Detection System with MLOps Pipeline
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/downloads/)
@@ -23,17 +31,18 @@ A production-ready machine learning system for real-time credit card fraud detec
 - Docker Desktop
 - 8GB RAM minimum
 
+```markdown
 ### Installation
 
-**1. Clone the repository**
+1. **Clone the repository**
+
 ```bash
 git clone https://github.com/MrKunalSharma/fraud-detection-mlops.git
 cd fraud-detection-mlops
 
 
                 
-2. Run with Docker Compose
-
+Run with Docker Compose
 
           
 
@@ -44,14 +53,12 @@ docker-compose up --build
 
 
                 
-3. Access the services
-
+Access the services
 API Documentation: http://localhost:8000/docs
 Prometheus Metrics: http://localhost:9090
 Grafana Dashboard: http://localhost:3000 (admin/admin)
 💻 Local Development
-1. Create virtual environment
-
+Create virtual environment
 
           
 
@@ -64,8 +71,7 @@ source venv/bin/activate  # Linux/Mac
 
 
                 
-2. Install dependencies
-
+Install dependencies
 
           
 
@@ -76,8 +82,7 @@ pip install -r requirements.txt
 
 
                 
-3. Download dataset
-
+Download dataset
 
           
 
@@ -88,8 +93,7 @@ python download_data.py
 
 
                 
-4. Train models
-
+Train models
 
           
 
@@ -101,8 +105,7 @@ python -m src.model_training
 
 
                 
-5. Run API locally
-
+Run API locally
 
           
 
@@ -262,3 +265,4 @@ GitHub: https://github.com/MrKunalSharma
 Project Link: https://github.com/MrKunalSharma/fraud-detection-mlops
 
 ⭐ If you found this project helpful, please consider giving it a star!
+
