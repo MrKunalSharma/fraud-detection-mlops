@@ -1,0 +1,22 @@
+# ML and Data Processing (already installed numpy, pandas, scikit-learn)
+imbalanced-learn
+matplotlib
+seaborn
+
+# MLOps and Orchestration
+mlflow
+
+# API and Web
+fastapi
+uvicorn
+pydantic
+
+# Monitoring
+prometheus-client
+
+# Development Tools
+pytest
+black
+flake8
+jupyter
+python-dotenv

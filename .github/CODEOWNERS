@@ -1,0 +1,13 @@
+# Default owners for everything
+* MrKunalSharma
+
+# ML Pipeline owners
+/src/model_*.py MrKunalSharma
+/src/data_*.py MrKunalSharma
+
+# API owners  
+/src/model_serving.py MrKunalSharma
+/src/monitoring.py MrKunalSharma
+
+# Tests
+/tests/ MrKunalSharma

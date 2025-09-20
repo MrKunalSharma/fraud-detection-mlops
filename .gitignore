@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.env
+venv/
+env/
+
+# Data
+data/raw/
+*.csv
+*.parquet
+
+# Models
+models/*.pkl
+models/*.pt
+
+# IDEs
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

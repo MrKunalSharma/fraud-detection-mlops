@@ -1,0 +1,58 @@
+{
+    "model_name": "random_forest",
+    "metrics": {
+        "random_forest": {
+            "accuracy": 0.9640988729328324,
+            "precision": 0.04231311706629055,
+            "recall": 0.9183673469387755,
+            "f1_score": 0.08089887640449438,
+            "roc_auc": 0.9776977722715422,
+            "confusion_matrix": [
+                [
+                    54827,
+                    2037
+                ],
+                [
+                    8,
+                    90
+                ]
+            ]
+        },
+        "logistic_regression": {
+            "accuracy": 0.9603244268108564,
+            "precision": 0.03842869342442357,
+            "recall": 0.9183673469387755,
+            "f1_score": 0.07377049180327869,
+            "roc_auc": 0.9760598685872773,
+            "confusion_matrix": [
+                [
+                    54612,
+                    2252
+                ],
+                [
+                    8,
+                    90
+                ]
+            ]
+        },
+        "decision_tree": {
+            "accuracy": 0.9498437554861136,
+            "precision": 0.029662461643368564,
+            "recall": 0.8877551020408163,
+            "f1_score": 0.057406796436819535,
+            "roc_auc": 0.9111538414606136,
+            "confusion_matrix": [
+                [
+                    54018,
+                    2846
+                ],
+                [
+                    11,
+                    87
+                ]
+            ]
+        }
+    },
+    "training_date": "2025-09-20T15:54:46.316112",
+    "model_path": "C:\\Users\\kunal\\Downloads\\E2E ML Pipeline with Monitoring (MLOps)\\models\\fraud_detection_model.pkl"
+}
