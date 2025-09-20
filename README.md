@@ -7,7 +7,7 @@
 
 A production-ready machine learning system for real-time credit card fraud detection, featuring automated model training, API deployment, and comprehensive monitoring.
 
-![Fraud Detection Dashboard](monitoring_dashboard.png)
+![Fraud Detection Dashboard]
 
 ## 🌟 Key Features
 
@@ -17,25 +17,6 @@ A production-ready machine learning system for real-time credit card fraud detec
 - **Production Monitoring**: Prometheus metrics and Grafana dashboards
 - **Containerized Deployment**: Docker Compose for easy deployment
 - **High Performance**: Sub-100ms prediction latency
-
-## 🏗️ Architecture
-
-
-
-                
-┌─────────────────┐ ┌──────────────────┐ ┌─────────────────┐
-│ FastAPI App │────▶│ Prometheus │────▶│ Grafana │
-│ (Port 8000) │ │ (Port 9090) │ │ (Port 3000) │
-└─────────────────┘ └──────────────────┘ └─────────────────┘
-│
-▼
-┌─────────────────┐
-│ ML Model │
-│ (Scikit-learn) │
-└─────────────────┘
-
-
-
 
 ## 🚀 Quick Start
 
@@ -48,7 +29,7 @@ A production-ready machine learning system for real-time credit card fraud detec
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/yourusername/fraud-detection-mlops.git
+git clone https://github.com/MrKunalSharma/fraud-detection-mlops.git
 cd fraud-detection-mlops
 
 
@@ -157,7 +138,32 @@ curl -X POST "http://localhost:8000/predict" \
        "Time": 0,
        "V1": -1.359807,
        "V2": -0.072781,
-       ...
+       "V3": 2.536347,
+       "V4": 1.378155,
+       "V5": -0.338321,
+       "V6": 0.462388,
+       "V7": 0.239599,
+       "V8": 0.098698,
+       "V9": 0.363787,
+       "V10": 0.090794,
+       "V11": -0.551600,
+       "V12": -0.617801,
+       "V13": -0.991390,
+       "V14": -0.311169,
+       "V15": 1.468177,
+       "V16": -0.470401,
+       "V17": 0.207971,
+       "V18": 0.025791,
+       "V19": 0.403993,
+       "V20": 0.251412,
+       "V21": -0.018307,
+       "V22": 0.277838,
+       "V23": -0.110474,
+       "V24": 0.066928,
+       "V25": 0.128539,
+       "V26": -0.189115,
+       "V27": 0.133558,
+       "V28": -0.021053,
        "Amount": 149.62
      }'
 
@@ -243,59 +249,10 @@ Dataset: Kaggle Credit Card Fraud Detection
 Inspired by real-world fraud detection systems
 Built with modern MLOps practices
 📧 Contact
-Your Kunal Sharma - https://www.linkedin.com/in/kunal-sharma-1a8457257/ - kunalsharma13579kunals@gmail.com
+Kunal Sharma
 
-Project Link: https://github.com/yourusername/fraud-detection-mlops
+LinkedIn: https://www.linkedin.com/in/kunal-sharma-1a8457257/
+Email: kunalsharma13579kunals@gmail.com
+Project Link: https://github.com/MrKunalSharma/fraud-detection-mlops.git
 
 ⭐ If you found this project helpful, please consider giving it a star!
-
-
-
-
-### Additional Files to Create:
-
-1. **Create `.gitignore`** (update the existing one):
-
-
-          
-Python
-pycache/
-*.py[cod]
-.env
-venv/
-env/
-
-Data
-data/raw/
-*.csv
-*.parquet
-
-Models
-models/.pkl
-models/.pt
-
-IDEs
-.vscode/
-.idea/
-
-OS
-.DS_Store
-Thumbs.db
-
-Docker
-*.log
-
-
-
-
-2. **Create `LICENSE`** file (MIT License):
-
-
-          
-MIT License
-
-Copyright (c) 2024 Kunal Sharma
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction...
