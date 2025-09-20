@@ -1,11 +1,3 @@
-I see the issue! The problem is that the first code block under "Clone the repository" is not properly closed. Here's the fixed version:
-
-
-          
-
-markdown
-
-
 # 🛡️ Real-time Fraud Detection System with MLOps Pipeline
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/downloads/)
@@ -31,7 +23,6 @@ A production-ready machine learning system for real-time credit card fraud detec
 - Docker Desktop
 - 8GB RAM minimum
 
-```markdown
 ### Installation
 
 1. **Clone the repository**
@@ -39,107 +30,73 @@ A production-ready machine learning system for real-time credit card fraud detec
 ```bash
 git clone https://github.com/MrKunalSharma/fraud-detection-mlops.git
 cd fraud-detection-mlops
+```
 
+2. **Run with Docker Compose**
 
-                
-Run with Docker Compose
-
-          
-
-bash
-
-
+```bash
 docker-compose up --build
+```
 
+3. **Access the services**
+- API Documentation: http://localhost:8000/docs
+- Prometheus Metrics: http://localhost:9090
+- Grafana Dashboard: http://localhost:3000 (admin/admin)
 
-                
-Access the services
-API Documentation: http://localhost:8000/docs
-Prometheus Metrics: http://localhost:9090
-Grafana Dashboard: http://localhost:3000 (admin/admin)
-💻 Local Development
-Create virtual environment
+## 💻 Local Development
 
-          
+1. **Create virtual environment**
 
-bash
-
-
+```bash
 python -m venv venv
 venv\Scripts\activate  # Windows
 source venv/bin/activate  # Linux/Mac
+```
 
+2. **Install dependencies**
 
-                
-Install dependencies
-
-          
-
-bash
-
-
+```bash
 pip install -r requirements.txt
+```
 
+3. **Download dataset**
 
-                
-Download dataset
-
-          
-
-bash
-
-
+```bash
 python download_data.py
+```
 
+4. **Train models**
 
-                
-Train models
-
-          
-
-bash
-
-
+```bash
 python -m src.data_preprocessing
 python -m src.model_training
+```
 
+5. **Run API locally**
 
-                
-Run API locally
-
-          
-
-bash
-
-
+```bash
 python run_api.py
+```
 
+## 📊 Model Performance
 
-                
-📊 Model Performance
-Model	Accuracy	Precision	Recall	F1-Score	ROC-AUC
-Random Forest	99.95%	95.12%	82.93%	88.61%	0.9146
-Logistic Regression	99.91%	91.67%	73.33%	81.48%	0.8666
-Decision Tree	99.89%	86.21%	83.33%	84.75%	0.9165
-🔄 API Usage
-Health Check
+| Model | Accuracy | Precision | Recall | F1-Score | ROC-AUC |
+|-------|----------|-----------|--------|----------|---------|
+| Random Forest | 99.95% | 95.12% | 82.93% | 88.61% | 0.9146 |
+| Logistic Regression | 99.91% | 91.67% | 73.33% | 81.48% | 0.8666 |
+| Decision Tree | 99.89% | 86.21% | 83.33% | 84.75% | 0.9165 |
 
-          
+## 🔄 API Usage
 
-bash
+### Health Check
 
-
+```bash
 curl http://localhost:8000/health
+```
 
+### Fraud Prediction
 
-                
-Fraud Prediction
-
-          
-
-bash
-
-
+```bash
 curl -X POST "http://localhost:8000/predict" \
      -H "Content-Type: application/json" \
      -d '{
@@ -174,42 +131,36 @@ curl -X POST "http://localhost:8000/predict" \
        "V28": -0.021053,
        "Amount": 149.62
      }'
+```
 
+### Response
 
-                
-Response
-
-          
-
-json
-
-
+```json
 {
   "prediction": 0,
   "probability": 0.02,
   "risk_level": "Low",
   "message": "Transaction seems legitimate"
 }
+```
 
+## 📈 Monitoring & Metrics
 
-                
-📈 Monitoring & Metrics
 The system tracks:
+- Total predictions count by type (fraud/legitimate)
+- Prediction latency histogram
+- API request success/error rates
+- Model performance metrics
 
-Total predictions count by type (fraud/legitimate)
-Prediction latency histogram
-API request success/error rates
-Model performance metrics
 Access Grafana dashboards to visualize:
+- Real-time fraud detection rate
+- Transaction risk distribution
+- API response times
+- System health metrics
 
-Real-time fraud detection rate
-Transaction risk distribution
-API response times
-System health metrics
-🗂️ Project Structure
+## 🗂️ Project Structure
 
-
-
+```
 fraud-detection-mlops/
 ├── src/
 │   ├── config.py              # Configuration settings
@@ -225,44 +176,50 @@ fraud-detection-mlops/
 ├── requirements.txt           # Python dependencies
 ├── Dockerfile                 # Container definition
 └── docker-compose.yml         # Multi-container setup
+```
 
+## 🔧 Configuration
 
-          
-🔧 Configuration
-Key configurations in src/config.py:
+Key configurations in `src/config.py`:
+- Model hyperparameters
+- API settings
+- Monitoring intervals
+- Data paths
 
-Model hyperparameters
-API settings
-Monitoring intervals
-Data paths
-📝 Key Learnings
+## 📝 Key Learnings
+
 This project demonstrates:
+- End-to-end ML pipeline development
+- REST API design with FastAPI
+- Containerization with Docker
+- Monitoring with Prometheus/Grafana
+- MLOps best practices
 
-End-to-end ML pipeline development
-REST API design with FastAPI
-Containerization with Docker
-Monitoring with Prometheus/Grafana
-MLOps best practices
-🤝 Contributing
-Fork the repository
-Create feature branch (git checkout -b feature/AmazingFeature)
-Commit changes (git commit -m 'Add AmazingFeature')
-Push to branch (git push origin feature/AmazingFeature)
-Open Pull Request
-📜 License
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit changes (`git commit -m 'Add AmazingFeature'`)
+4. Push to branch (`git push origin feature/AmazingFeature`)
+5. Open Pull Request
+
+## 📜 License
+
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-🙏 Acknowledgments
-Dataset: Kaggle Credit Card Fraud Detection
-Inspired by real-world fraud detection systems
-Built with modern MLOps practices
-📧 Contact
-Kunal Sharma
+## 🙏 Acknowledgments
 
-LinkedIn: https://www.linkedin.com/in/kunal-sharma-1a8457257/
-Email: kunalsharma13579kunals@gmail.com
-GitHub: https://github.com/MrKunalSharma
-Project Link: https://github.com/MrKunalSharma/fraud-detection-mlops
+- Dataset: [Kaggle Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
+- Inspired by real-world fraud detection systems
+- Built with modern MLOps practices
+
+## 📧 Contact
+
+**Kunal Sharma**
+
+- LinkedIn: [https://www.linkedin.com/in/kunal-sharma-1a8457257/](https://www.linkedin.com/in/kunal-sharma-1a8457257/)
+- Email: kunalsharma13579kunals@gmail.com
+- GitHub: [https://github.com/MrKunalSharma](https://github.com/MrKunalSharma)
+- Project Link: [https://github.com/MrKunalSharma/fraud-detection-mlops](https://github.com/MrKunalSharma/fraud-detection-mlops)
 
 ⭐ If you found this project helpful, please consider giving it a star!
-
